@@ -1,0 +1,263 @@
+:root {
+    --bg-dark: #020617;
+    --accent-cyan: #06b6d4;
+    --accent-purple: #8b5cf6;
+    --glass: rgba(255, 255, 255, 0.03);
+    --whatsapp: #25d366;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 17px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-dark);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #f1f5f9;
+}
+
+.site-main {
+    padding-top: 8rem;
+}
+
+.brand-mark {
+    line-height: 1;
+}
+
+.brand-short {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.brand-long {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-top: 0.25rem;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glass-card,
+.glass {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: var(--accent-cyan);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -20px rgba(6, 182, 212, 0.3);
+}
+
+.nav-glass {
+    background: rgba(2, 6, 23, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 0.9rem;
+}
+
+.nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    min-width: 15rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(2, 6, 23, 0.95);
+    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.45);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 60;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.nav-dropdown-menu a {
+    display: block;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0.7rem;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+.nav-dropdown-menu a:hover {
+    background: rgba(6, 182, 212, 0.15);
+    color: #67e8f9;
+}
+
+.mobile-menu {
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease;
+}
+
+.mobile-menu.glass {
+    background: rgba(2, 6, 23, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+.mobile-menu.open {
+    display: block;
+    max-height: min(34rem, calc(100vh - 6rem));
+    overflow-y: auto;
+}
+
+.mobile-services {
+    display: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+.mobile-services.open {
+    display: block;
+}
+
+.mobile-services a {
+    display: block;
+    padding: 0.32rem 0;
+    font-size: 0.78rem;
+    text-transform: none;
+    color: #94a3b8;
+}
+
+.desktop-nav a {
+    font-size: 0.92rem;
+}
+
+.reveal,
+.hero-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, var(--accent-cyan), #0891b2);
+}
+
+.btn-primary:hover {
+    filter: brightness(1.06);
+}
+
+.desktop-cta {
+    background: linear-gradient(90deg, var(--accent-cyan), #0891b2) !important;
+    color: #ffffff;
+}
+
+.desktop-cta:hover {
+    filter: brightness(1.06);
+    background: linear-gradient(90deg, var(--accent-cyan), #0891b2) !important;
+}
+
+.price-slogan {
+    border: 1px solid rgba(6, 182, 212, 0.45);
+    box-shadow: 0 0 0 1px rgba(6, 182, 212, 0.2), 0 10px 35px rgba(6, 182, 212, 0.2);
+    background: linear-gradient(90deg, rgba(6, 182, 212, 0.18), rgba(139, 92, 246, 0.16));
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 1.1rem;
+    bottom: 1.1rem;
+    z-index: 70;
+    width: 4.1rem;
+    height: 4.1rem;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--whatsapp);
+    color: #ffffff;
+    box-shadow: 0 16px 30px rgba(37, 211, 102, 0.35);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+}
+
+.whatsapp-float svg,
+.whatsapp-float i {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+footer .text-sm {
+    font-size: 0.98rem;
+}
+
+footer .text-xs {
+    font-size: 0.85rem;
+}
+
+footer .footer-contact {
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .desktop-nav,
+    .desktop-cta {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    .brand-short {
+        font-size: 1.7rem;
+    }
+
+    .brand-long {
+        font-size: 0.62rem;
+    }
+
+    .nav-dropdown-menu {
+        display: none;
+    }
+}

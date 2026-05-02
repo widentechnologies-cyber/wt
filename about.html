@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Wider Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="overflow-x-hidden">
+    <nav class="fixed w-full z-50 py-6 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="brand-mark">
+                    <span class="brand-short text-white">W<span class="text-cyan-400">&</span>T</span>
+                    <span class="brand-long">Wider Technologies</span>
+                </a>
+                <div class="desktop-nav hidden md:flex items-center space-x-10 text-sm font-bold uppercase tracking-widest">
+                    <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+                    <a href="about.html" class="text-cyan-400">About</a>
+                    <div class="nav-dropdown">
+                        <a href="services.html" class="hover:text-cyan-400 transition inline-flex items-center gap-1">Services <i data-lucide="chevron-down" class="w-4 h-4"></i></a>
+                        <div class="nav-dropdown-menu">
+                            <a href="pages/web-design.html">Web Design</a>
+                            <a href="pages/web-development.html">Web Development</a>
+                            <a href="pages/software-development.html">Software Development</a>
+                            <a href="pages/saas-solutions.html">SaaS Solutions</a>
+                            <a href="pages/social-media.html">Social Media</a>
+                            <a href="pages/seo.html">SEO</a>
+                            <a href="pages/video-editing.html">Video Editing</a>
+                            <a href="pages/graphic-design.html">Graphic Design</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="hover:text-cyan-400 transition">Contact</a>
+                </div>
+                <a href="contact.html" class="desktop-cta bg-cyan-600 hover:bg-cyan-500 px-8 py-3 rounded-full font-bold transition shadow-lg shadow-cyan-900/20 text-sm">Start a Project</a>
+                <button type="button" class="menu-toggle p-2 rounded-md border border-white/10 text-white" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i data-lucide="menu" class="w-5 h-5" id="menu-icon"></i>
+                </button>
+            </div>
+            <div class="mobile-menu mt-4 glass rounded-2xl p-4" id="mobile-menu">
+                <div class="flex flex-col gap-3 text-sm font-bold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+                    <a href="about.html" class="text-cyan-400">About</a>
+                    <a href="services.html" class="hover:text-cyan-400 transition">Services</a>
+                    <a href="contact.html" class="hover:text-cyan-400 transition">Contact</a>
+                </div>
+                <div class="mobile-services">
+                    <a href="pages/web-design.html">Web Design</a>
+                    <a href="pages/web-development.html">Web Development</a>
+                    <a href="pages/software-development.html">Software Development</a>
+                    <a href="pages/saas-solutions.html">SaaS Solutions</a>
+                    <a href="pages/social-media.html">Social Media</a>
+                    <a href="pages/seo.html">SEO</a>
+                    <a href="pages/video-editing.html">Video Editing</a>
+                    <a href="pages/graphic-design.html">Graphic Design</a>
+                </div>
+                <a href="contact.html" class="btn-primary mt-4 inline-block px-6 py-3 rounded-xl font-bold text-sm">Start a Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="site-main pb-24">
+        <section class="max-w-6xl mx-auto px-6 text-center reveal">
+            <p class="price-slogan inline-block py-3 px-6 rounded-full text-lg md:text-2xl font-extrabold mb-8">$1 - $10000+</p>
+            <h1 class="text-5xl font-extrabold mb-6">About Wider Technologies</h1>
+            <p class="text-xl text-slate-400 mb-12 max-w-3xl mx-auto">We are a people-first digital team that helps businesses move from idea to execution with confidence. Every project is handled with clear communication, practical advice, and real ownership.</p>
+            <div class="glass p-10 rounded-3xl text-left">
+                <h2 class="text-cyan-400 font-bold mb-4 uppercase tracking-widest">Why Clients Trust Us</h2>
+                <p class="text-slate-300 leading-relaxed">Our work is not only about visuals or code. We focus on what matters to your business: attracting customers, improving operations, and making your brand look professional in every digital touchpoint.</p>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-6 mt-20 grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-3xl reveal">
+                <i data-lucide="target" class="w-10 h-10 text-cyan-400 mb-5"></i>
+                <h3 class="text-2xl font-bold mb-4">Outcome Focused</h3>
+                <p class="text-slate-400">Every project starts with business goals and ends with measurable growth.</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl reveal">
+                <i data-lucide="users" class="w-10 h-10 text-purple-400 mb-5"></i>
+                <h3 class="text-2xl font-bold mb-4">Client Partnership</h3>
+                <p class="text-slate-400">Transparent communication and weekly demos keep every project on track.</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl reveal">
+                <i data-lucide="rocket" class="w-10 h-10 text-emerald-400 mb-5"></i>
+                <h3 class="text-2xl font-bold mb-4">Launch Ready</h3>
+                <p class="text-slate-400">We design and ship reliable digital products that scale from day one.</p>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-6 mt-20 grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-3xl reveal">
+                <h3 class="text-2xl font-bold mb-4">How We Work With You</h3>
+                <p class="text-slate-400 mb-5">You will always know what is happening in your project. We follow a simple process:</p>
+                <ul class="space-y-3 text-slate-300">
+                    <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-400 mt-0.5"></i><span>We start by listening to your goals and challenges.</span></li>
+                    <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-400 mt-0.5"></i><span>We present a clear roadmap and timeline in plain words.</span></li>
+                    <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-400 mt-0.5"></i><span>We build fast, review together, and improve in each milestone.</span></li>
+                    <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-400 mt-0.5"></i><span>We support you after launch so your growth continues.</span></li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 rounded-3xl reveal">
+                <h3 class="text-2xl font-bold mb-4">Who We Work With</h3>
+                <p class="text-slate-400 mb-4">Our team supports local businesses, agencies, startups, and growing brands who want premium quality without unnecessary complexity.</p>
+                <p class="text-slate-400 mb-4">Whether your budget starts at a basic package or a full enterprise build, we provide honest guidance and custom solutions that feel personal.</p>
+                <a href="contact.html" class="btn-primary inline-block mt-3 px-7 py-3 rounded-xl font-bold">Talk to Our Team</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-20 border-t border-white/5 bg-black/20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-16">
+            <div class="col-span-2">
+                <div class="brand-mark mb-8">
+                    <span class="brand-short text-white">W<span class="text-cyan-400">&</span>T</span>
+                    <span class="brand-long">Wider Technologies</span>
+                </div>
+                <p class="text-slate-500 max-w-sm leading-relaxed">We provide high-end digital services for startups, growing businesses, and established companies worldwide.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-8 text-white uppercase tracking-widest text-xs">Quick Links</h4>
+                <div class="flex flex-col space-y-4 text-slate-400 text-sm">
+                    <a href="index.html" class="hover:text-cyan-400">Home</a>
+                    <a href="about.html" class="hover:text-cyan-400">About</a>
+                    <a href="services.html" class="hover:text-cyan-400">Services</a>
+                    <a href="contact.html" class="hover:text-cyan-400">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-8 text-white uppercase tracking-widest text-xs">Legal</h4>
+                <div class="flex flex-col space-y-4 text-slate-400 text-sm">
+                    <a href="terms.html" class="hover:text-cyan-400">Terms & Conditions</a>
+                    <a href="privacy.html" class="hover:text-cyan-400">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-10 text-slate-400 text-sm footer-contact">
+            <a href="mailto:widertechnologies" class="inline-flex items-center gap-2 hover:text-cyan-300">
+                <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i>
+                <span>widertechnologies</span>
+            </a>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/5 text-center text-slate-600 text-xs">
+            &copy; 2026 Wider Technologies. All rights reserved.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/18068378815" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+        <span class="sr-only">WhatsApp</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
